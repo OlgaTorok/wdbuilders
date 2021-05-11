@@ -1,0 +1,461 @@
+@import 'config';
+
+/*       General 
+------------------------*/
+body {
+  position: relative;
+  font-family: $text-font;
+  color: $text-color;
+  font-weight: 100;
+  font-size: 20px;
+  min-height: 100vh;
+}
+
+main {
+  padding-bottom: 3em;
+}
+
+/*   Page section settings */
+.page {
+	padding: 5em 0;
+}
+
+.text-center h1 {
+  font-family: $header-font;
+	text-align: center;
+	padding-bottom: .2em;
+	color: $blue-color;
+	font-weight: bold;
+}
+
+.heading-line {
+  width: 5em;
+  margin: 0 auto 3em;
+  padding: 0;
+  border: none;
+  border-top: medium double $red-color;
+  text-align: center;
+}
+
+/*       Navigation 
+------------------------*/
+.navbar {
+  margin: 0;
+  padding: 0 .8em;
+  transition: all .5s ease-out;
+  height: 3.8em;
+  background-color: $white-color;
+  box-shadow: $shadow;
+  opacity: .95;
+
+  .navbar-brand img {
+    padding: .2em;
+    height: 3.2em;
+    border-radius: 0;
+  }
+
+  .navbar-collapse {
+    background-color: $white-color;
+    opacity: none;
+    text-align: center;
+
+    .navbar-nav .nav-link {
+      color: $blue-color;
+      padding: .5em .6em;
+      font-weight: 600;
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link:hover {
+      color: $red-color;
+      font-weight: 600;
+    }
+
+    .dropdown-menu {
+      border-radius: 0;
+
+      .dropdown-item {
+        color: $blue-color;
+        font-weight: 600;
+        font-size: 18px;
+
+        &:hover {
+          background-color: $light-color;
+          color: $red-color;
+        }
+
+        &:focus {
+          background-color: $light-color;
+          color: $red-color;
+        }
+      }
+
+      .dropdown-item.active, 
+      .dropdown-item:active {
+        text-decoration: none;
+        background-color: $white-color;
+        color: $red-color;
+      }
+    }
+  }
+}
+
+/*         Home 
+------------------------*/
+header {
+  .carousel-item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-caption {
+    background-color: $white-color;
+    color: $text-color;
+    opacity: .9;
+    margin-bottom: 1.6em;
+    padding: 1.1em 2.7em;
+
+    h4 {
+    font-family: $header-font;
+      color: $blue-color;
+    }
+
+    .sm-line {
+      border-color: $light-color;
+    }
+  }
+}
+
+
+/*       About Us 
+------------------------*/
+#about {
+  background-color: $white-color;
+
+  .team {
+    img {
+      border: .3em solid $light-color;
+      border-radius: 0;
+    }
+  }
+
+  .fas {
+    color: $red-color;
+    padding-right: .5em;
+  }
+
+
+  }
+
+
+/*     Mission 
+------------------------*/
+.mission {
+  background-color: $light-color;
+
+  // blockquote::first-letter {
+  //     float: center;
+  //     font-size: 2em;
+  //     // font-weight: bold;
+  //     line-height: 1;
+  //     text-shadow: 1px 1px 6px #000;
+  //     // margin: -0.07em 0.1em -0.1em 0;
+  //   }
+}
+
+
+/*       Services 
+------------------------*/
+#services {
+
+  .card {
+    border: none;
+    margin-bottom: 3em;
+    border-radius: 0;
+    text-align: center;
+    padding: 0 .5em;
+
+    img {
+      box-shadow: $shadow;
+    }
+
+    .card-title {
+      color: $blue-color;
+      font-weight: 600;
+    }
+  }
+}
+
+
+/*     Testimonials 
+------------------------*/
+#testimonials {
+  background-color: $light-color;
+
+  .carousel {
+    width: 100%;
+    min-height: 11.1em;
+
+    .carousel-inner {
+      height: 100%;
+
+      .carousel-item {
+        padding: 0 25%;
+
+        blockquote {
+          font-size: .9em;
+        }
+
+        blockquote .fas {
+          color: $blue-color;
+          margin: 0 1.5em;
+        }
+
+        .client-hr {
+          border-top: 0.07em solid $blue-color;
+        }
+      }
+    }
+
+    .carousel-control-prev {
+      width: 10%;
+      opacity: .9;
+
+      &:hover {
+        opacity: .5;
+      }
+    }
+
+    .carousel-control-next {
+      width: 10%;
+      opacity: .9;
+
+      &:hover {
+        opacity: .5;
+      }
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+      background-image: none;
+      color: $red-color;
+      font-size: 1.1em;
+    }
+  }
+}
+
+
+/*       Contact 
+------------------------*/
+#contact {
+
+  .card {
+    margin: 0;
+    padding: 1.1em;
+    border: none;
+
+    .card-title {
+      font-family: $header-font;
+      font-weight: 700;
+      color: $red-color;
+    }
+
+    .fas {
+      color: $blue-color;
+    }
+
+    a {
+      color: $text-color;
+      text-decoration: none;
+    }
+  }
+
+  .van {
+    padding: 0;
+    
+    img {
+      border-radius: 0;
+      padding: .2em;
+      display: inline-block;
+      border: 3px solid $blue-color;
+      border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+      position: relative;
+      
+      &::before {
+          content: '';
+          border: 2px solid $blue-color;
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+          border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+      }
+    }
+  }
+}
+
+/*       Banner 
+------------------------*/
+// #banner {
+//   background-color: #d2ddf3;
+
+//   .box {    
+
+//     h3 {
+//     font-family: $header-font;
+//       color: $blue-color;
+//     }
+
+//     p {
+//       font-style: italic;
+//     }
+//   }
+
+//   .btn-primary {
+//     border-radius: 0;
+//   }
+// }
+
+
+/*       Footer 
+------------------------*/
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background-color: $blue-color;
+  color: $light-color;
+  padding: 2em;
+  font-size: .7em;
+  
+
+  span {
+    margin: 0;
+  }
+
+  a {
+    color: $white-color;
+
+    &:hover{
+      color: $hover-color;
+    }
+  }
+
+  .fab, .fas, .far {
+    font-size: 1.3em;
+    margin: .2em .3em;
+  }
+}
+
+
+/*      Extensions 
+------------------------*/
+#extensions, #renovations {
+
+  .description {
+    padding: 1em 0;
+  }
+
+  .img-gallery {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    height: 24em;
+
+    .box {
+      flex: 1;
+      overflow: hidden;
+      transition: .5s;
+      margin: 0 1%;
+      box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
+      line-height: 0;
+
+      img {
+        width: 200%;
+        height: calc(100% - 5vh);
+        object-fit: cover; 
+        transition: .5s;
+      }
+
+      span {
+        font-size: .8em;
+        display: block;
+        text-align: center;
+        height: 3em;
+        line-height: 2.6;
+      }
+    }
+
+    .box:hover { 
+      flex: 1 1 50%; 
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  
+
+  // .carousel {
+  //   position: relative;
+  //   margin: auto;
+  //   max-width: 100%;
+
+  //   .img-ext {
+  //     vertical-align: middle;
+  //     padding-bottom: 1.6em;
+  //   }
+  // }
+}
+
+
+/*      Renovations 
+------------------------*/
+#renovations {
+  .description {
+    padding: 1em 0;
+  }
+
+  .img-ext {
+    padding-bottom: 1.6em;
+  }
+}
+
+
+
+
+
+/*   Media Queries
+------------------------*/
+@media (max-width: 991px){
+  .navbar-collapse .navbar-nav .dropdown .dropdown-menu {
+    text-align: center;
+  }
+
+  .navbar {
+    height: 3em;
+
+    .navbar-brand img {
+      padding: .1em;
+      height: 2.3em;
+    }
+  }
+}
+
+@media (max-width: 370px){
+  .navbar .navbar-brand img {
+    padding: .1em;
+    height: 1.8em;
+  }
+}
+

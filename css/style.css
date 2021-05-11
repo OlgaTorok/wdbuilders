@@ -1,0 +1,400 @@
+/*       General 
+------------------------*/
+body {
+  position: relative;
+  font-family: "Nunito", sans-serif;
+  color: #191919;
+  font-weight: 100;
+  font-size: 20px;
+  min-height: 100vh;
+}
+
+main {
+  padding-bottom: 3em;
+}
+
+/*   Page section settings */
+.page {
+  padding: 5em 0;
+}
+
+.text-center h1 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding-bottom: .2em;
+  color: #224280;
+  font-weight: bold;
+}
+
+.heading-line {
+  width: 5em;
+  margin: 0 auto 3em;
+  padding: 0;
+  border: none;
+  border-top: medium double #ca312f;
+  text-align: center;
+}
+
+/*       Navigation 
+------------------------*/
+.navbar {
+  margin: 0;
+  padding: 0 .8em;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  height: 3.8em;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  opacity: .95;
+}
+
+.navbar .navbar-brand img {
+  padding: .2em;
+  height: 3.2em;
+  border-radius: 0;
+}
+
+.navbar .navbar-collapse {
+  background-color: #fff;
+  opacity: none;
+  text-align: center;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-link {
+  color: #224280;
+  padding: .5em .6em;
+  font-weight: 600;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-link.active,
+.navbar .navbar-collapse .navbar-nav .nav-link:hover {
+  color: #ca312f;
+  font-weight: 600;
+}
+
+.navbar .navbar-collapse .dropdown-menu {
+  border-radius: 0;
+}
+
+.navbar .navbar-collapse .dropdown-menu .dropdown-item {
+  color: #224280;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.navbar .navbar-collapse .dropdown-menu .dropdown-item:hover {
+  background-color: #e9ecef;
+  color: #ca312f;
+}
+
+.navbar .navbar-collapse .dropdown-menu .dropdown-item:focus {
+  background-color: #e9ecef;
+  color: #ca312f;
+}
+
+.navbar .navbar-collapse .dropdown-menu .dropdown-item.active,
+.navbar .navbar-collapse .dropdown-menu .dropdown-item:active {
+  text-decoration: none;
+  background-color: #fff;
+  color: #ca312f;
+}
+
+/*         Home 
+------------------------*/
+header .carousel-item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+header .carousel-caption {
+  background-color: #fff;
+  color: #191919;
+  opacity: .9;
+  margin-bottom: 1.6em;
+  padding: 1.1em 2.7em;
+}
+
+header .carousel-caption h4 {
+  font-family: "Montserrat", sans-serif;
+  color: #224280;
+}
+
+header .carousel-caption .sm-line {
+  border-color: #e9ecef;
+}
+
+/*       About Us 
+------------------------*/
+#about {
+  background-color: #fff;
+}
+
+#about .team img {
+  border: 0.3em solid #e9ecef;
+  border-radius: 0;
+}
+
+#about .fas {
+  color: #ca312f;
+  padding-right: .5em;
+}
+
+/*     Mission 
+------------------------*/
+.mission {
+  background-color: #e9ecef;
+}
+
+/*       Services 
+------------------------*/
+#services .card {
+  border: none;
+  margin-bottom: 3em;
+  border-radius: 0;
+  text-align: center;
+  padding: 0 .5em;
+}
+
+#services .card img {
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+#services .card .card-title {
+  color: #224280;
+  font-weight: 600;
+}
+
+/*     Testimonials 
+------------------------*/
+#testimonials {
+  background-color: #e9ecef;
+}
+
+#testimonials .carousel {
+  width: 100%;
+  min-height: 11.1em;
+}
+
+#testimonials .carousel .carousel-inner {
+  height: 100%;
+}
+
+#testimonials .carousel .carousel-inner .carousel-item {
+  padding: 0 25%;
+}
+
+#testimonials .carousel .carousel-inner .carousel-item blockquote {
+  font-size: .9em;
+}
+
+#testimonials .carousel .carousel-inner .carousel-item blockquote .fas {
+  color: #224280;
+  margin: 0 1.5em;
+}
+
+#testimonials .carousel .carousel-inner .carousel-item .client-hr {
+  border-top: 0.07em solid #224280;
+}
+
+#testimonials .carousel .carousel-control-prev {
+  width: 10%;
+  opacity: .9;
+}
+
+#testimonials .carousel .carousel-control-prev:hover {
+  opacity: .5;
+}
+
+#testimonials .carousel .carousel-control-next {
+  width: 10%;
+  opacity: .9;
+}
+
+#testimonials .carousel .carousel-control-next:hover {
+  opacity: .5;
+}
+
+#testimonials .carousel .carousel-control-next-icon,
+#testimonials .carousel .carousel-control-prev-icon {
+  background-image: none;
+  color: #ca312f;
+  font-size: 1.1em;
+}
+
+/*       Contact 
+------------------------*/
+#contact .card {
+  margin: 0;
+  padding: 1.1em;
+  border: none;
+}
+
+#contact .card .card-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #ca312f;
+}
+
+#contact .card .fas {
+  color: #224280;
+}
+
+#contact .card a {
+  color: #191919;
+  text-decoration: none;
+}
+
+#contact .van {
+  padding: 0;
+}
+
+#contact .van img {
+  border-radius: 0;
+  padding: .2em;
+  display: inline-block;
+  border: 3px solid #224280;
+  border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+  position: relative;
+}
+
+#contact .van img::before {
+  content: '';
+  border: 2px solid #224280;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+          transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+  border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+}
+
+/*       Banner 
+------------------------*/
+/*       Footer 
+------------------------*/
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background-color: #224280;
+  color: #e9ecef;
+  padding: 2em;
+  font-size: .7em;
+}
+
+footer span {
+  margin: 0;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #a6bce7;
+}
+
+footer .fab, footer .fas, footer .far {
+  font-size: 1.3em;
+  margin: .2em .3em;
+}
+
+/*      Extensions 
+------------------------*/
+#extensions .description, #renovations .description {
+  padding: 1em 0;
+}
+
+#extensions .img-gallery, #renovations .img-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 24em;
+}
+
+#extensions .img-gallery .box, #renovations .img-gallery .box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin: 0 1%;
+  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  line-height: 0;
+}
+
+#extensions .img-gallery .box img, #renovations .img-gallery .box img {
+  width: 200%;
+  height: calc(100% - 5vh);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#extensions .img-gallery .box span, #renovations .img-gallery .box span {
+  font-size: .8em;
+  display: block;
+  text-align: center;
+  height: 3em;
+  line-height: 2.6;
+}
+
+#extensions .img-gallery .box:hover, #renovations .img-gallery .box:hover {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+#extensions .img-gallery .box:hover img, #renovations .img-gallery .box:hover img {
+  width: 100%;
+  height: 100%;
+}
+
+/*      Renovations 
+------------------------*/
+#renovations .description {
+  padding: 1em 0;
+}
+
+#renovations .img-ext {
+  padding-bottom: 1.6em;
+}
+
+/*   Media Queries
+------------------------*/
+@media (max-width: 991px) {
+  .navbar-collapse .navbar-nav .dropdown .dropdown-menu {
+    text-align: center;
+  }
+  .navbar {
+    height: 3em;
+  }
+  .navbar .navbar-brand img {
+    padding: .1em;
+    height: 2.3em;
+  }
+}
+
+@media (max-width: 370px) {
+  .navbar .navbar-brand img {
+    padding: .1em;
+    height: 1.8em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
